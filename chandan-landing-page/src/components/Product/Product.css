@@ -121,3 +121,26 @@
   background-color: #41C185;
   border-radius: 9999px;
 }
+
+@media screen and (max-width: 768px) {
+  .product-section {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .horizontal-section {
+    padding: 0 16px;
+  }
+}
