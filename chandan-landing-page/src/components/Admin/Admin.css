@@ -1,0 +1,34 @@
+.admin-form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #fff7ec;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-form-container input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.admin-form-container button {
+  background-color: #ffbd59;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #1a1a1a;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
