@@ -7,13 +7,13 @@ function CMS() {
   const [text, setText] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/heading')
+    fetch('https://chandan-brewex-landing-cms.onrender.com/api/heading')
       .then(res => res.json())
       .then(data => setText(data?.text || ''));
   }, []);
 
   const handleSubmit = async () => {
-    await fetch('http://localhost:5000/api/heading', {
+    await fetch('https://chandan-brewex-landing-cms.onrender.com/api/heading', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }),

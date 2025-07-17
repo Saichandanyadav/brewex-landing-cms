@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://chandan-brewex-landing-cms.onrender.com/');
 
 function Home() {
   const [heading, setHeading] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/heading')
+    fetch('https://chandan-brewex-landing-cms.onrender.com/api/heading')
       .then(res => res.json())
       .then(data => setHeading(data?.text || ''));
 
